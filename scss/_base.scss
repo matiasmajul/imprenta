@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+      font-family: $fuente-titulo;
+}
+
+p{
+    font-family: $fuente-parrafos;
+
+}
+/* Generar Columnas */
+
+@mixin generarColumnas($breakpoint) {
+
+    @for $index from 1 through 12 {
+        @if $breakpoint == 'mb' {
+            .col-#{$index} {
+                width: 100% / 12 * $index;
+            }
+        } @else {
+            .col-#{$breakpoint}-#{$index} {
+                width: 100% / 12 * $index;
+            }
+        }
+    }
+}
+
+@include generarColumnas('mb');
+
+@mixin centrarContenido($eje-principal, $eje-secundario) {
+    display: flex;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+@each $clave, $valor in $redes {
+    .bi-#{$clave}:hover {
+        color: $valor;
+    }
+}
+
+
+@each $clave, $valor in $trabajos {
+        
+    .trabajo__#{$clave}{ 
+        @include centrarContenido( center,center);
+        background-image: url(../imagen/trabajos/#{$valor}.jpg);
+        }
+}
+
+
+

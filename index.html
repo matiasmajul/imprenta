@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagen/logo.png">
+    <title>MDA | Inicio</title>
+
+    <!-- CDN BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--      CSS       -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
+    <!--    FUENTES     -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap">
+</head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#">
+                        <img src="imagen/icono.png" alt="Icono">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item fw-bold">
+                                <a  class="nav-link active " href="/">
+                                    Inicio
+                                </a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/nosotros.html">
+                                    Nosotros
+                                </a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/productos.html">
+                                    Productos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a  class="nav-link active" aria-current="page" href="pages/frecuentes.html">
+                                    Preguntas Frecuentes
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div class="container__avion container__avion--one">
+                    <div class="avion avion--one"></div>
+                </div>
+                
+                <div class="container__avion container__avion--two ">
+                    <div class="avion avion--two"></div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section class="container-fluid">
+                <div class="intro row w-100 ">
+                    <div class="intro__titulo col-12 pt-5 text-center">
+                        <h1 class="titulo__uno">EXPERIENCIA Y OFICIO DE IMPRESIÓN</h1>
+                        <h1 class="titulo__dos">PARA QUE SU PROYECTO TOME VUELO</h1>
+                        <p class="titulo__subtitulo"> Formularios, impresión digital, offset, serigrafía y mucho más!</p>
+                    </div>
+                    <div class="intro__logo d-none d-md-inline-block col-12 h-25 ">
+                        <img class="float-start" src="imagen/logo.png" alt="Logo"> 
+                    </div>
+                    <div class="intro__boton ">
+                        <a class="btn btn-light float-end rounded-circle shadow" href="#trabajos" >
+                            <div class="animate__animated animate__heartBeat animate__infinite animate__slow">
+                                <i class="bi bi-arrow-down "></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="trabajo row " id="trabajos">
+                    <div class="trabajo__offset col-12 col-md-4 ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#offset">
+                            Impresión OFFSET
+                        </button>
+                    </div>              
+                    <div class="trabajo__digital col-12 col-md-4 ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#digital">
+                            Impresión DIGITAL
+                        </button>
+                    </div>
+                    <div class="trabajo__diseno col-12 col-md-4 ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#diseno">
+                            Diseño gráfico
+                        </button>
+                    </div>
+                    <div class="trabajo__laser col-12 col-md-4 ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#corte">
+                            Corte láser
+                        </button>
+                    </div>
+                    <div class="trabajo__postprensa col-12 col-md-4 ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#postprensa">
+                            Postprensa
+                        </button>
+                    </div>
+                    <div class="trabajo__logistica col-12 col-md-4  ">
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#logistica">
+                            Logística
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+       <!-- Offset -->
+        <div class="modal fade" id="offset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Impresión Offset</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            En este tipo de impresión somos especialistas y contamos con equipos alemanes, ingleses, americanos, japoneses y chinos entre otros, de la más variadas tecnologías y cada uno para fines específicos.</p>
+                        <p>
+                            Contamos con más de 14 cuerpos impresores de diferentes medidas funcionando casi en simultáneo para brindar la mayor calidad y el más rápido proceso de los requerimientos de nuestros clientes.</p>
+                        <p>
+                            La tecnología digital ha sido un aporte importante a la hora de entregar muestras, que luego se imprimen a offset, o de reducir los tiempos de espera que la tecnología offset posee. Esto ha potenciado la respuesta que en este momento estamos brindando al mercado.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Digital -->
+        <div class="modal fade" id="digital" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Impresión Digital</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Desde los primeros equipos duplicadores a la tecnología actual de polímero sólido o tintas líquidas, estamos permanentemente incorporando las últimas tecnologías.</p>
+                        <p>
+                            Podemos manejar medidas y gramajes diversos, permitiendo cubrir toda la línea de tarjetería, folletería de bajo y mediano tiraje, libros, revistas, carpetas, hojas carta, papelería comercial, pequeños carteles, etc.</p>
+                        <p>
+                            Además esta tecnología, permite la impresión de punto similar al offset, con lo que se logra una compatibilidad casi total de color, puediendo así obtener muy buenas pruebas finales para muestras previas o pequeños tirajes de una impresión offset final.&nbsp;</p>
+                        <p>
+                            No dude en consultarnos, ya que nuestra experiencia la brindamos con mucho gusto y sin costo alguno.</p>
+                        <p>
+                            De esta forma lograremos que sus impesos luzcan bien y con un óptimo costo.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diseño grafico -->
+        <div class="modal fade" id="diseno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Diseño gráfico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Somos la primer gráfica de Rosario y una de las pocas que destina una parte importante de su estructura al Diseño Gráfico.</p>
+                        <p>
+                            Contamos con profesionales capaces de resolver diseños comerciales y editoriales con solvencia, a la vez podemos dar un curso favorable a los diseños que nos llegan de agencias de publicidad así como también de particulares.</p>
+                        <p>
+                            Contamos con equipos PC compatible de última tecnología así como Macintosh, lo que nos permite resolver en tiempo y forma cualquier requerimiento en impresión.</p>                          
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corte Laser -->
+        <div class="modal fade" id="corte" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Corte láser</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Recientemente hemos incorporado una cortadora laser que nos permite cortes con diversas formas sobre muchos materiales en medidas hasta 100 x 60 cm y en espesores de hasta 10mm.</p>
+                        <p>
+                            Este equipo nos da mucha versatilidad en lo que es terminación de tarjetas con forma, imanes, madera, goma, cuero, tela, pvc, y muchos otros materiales.</p>
+                        <p>
+                            Consulte por cualquier tipo de corte o grabado laser, con gusto responderemos sus inquietudes.</p>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Postprensa -->
+            <div class="modal fade" id="postprensa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Postprensa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            El sector de terminación es uno de los sectores al que más fuertemente apostamos.</p>
+                        <p>
+                            Hemos incorporado Alzadoras (intercaladoras) de pliego de la reconocida firma Horizon lo que incrementa la velocidad y calidad de los impresos que requieren este proceso, como ser formularios y revistas, entre otros.</p>
+                        <p>
+                            Asimismo contamos con dobladora OFM tubo a succión que permite dobleces convencionales y especiales. Guillotina de terminación para agilidad en la entrega, con cortes programables, pisón flotante, haz laser de marcado. Máquina de micro y medio corte. Varias abrochadoras industriales de distintas marcas.</p>
+                        <p>
+                            Adquirimos recientemente una laminadora semi-automática que nos permite laminar sin demoras los trabajos terminados y dotarlos de una calidad y resistencia únicos.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logistica -->
+        <div class="modal fade" id="logistica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Logística</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            El servicio al cliente es una de las premisas fundamentales de nuestra empresa.</p>
+                        <p>
+                            Todo el proceso se completa con entregas diarias con reparto propio, con servicio puerta a puerta en toda el área de Rosario y su zona de influencia.</p>
+                        <p>
+                            Tenemos el orgullo de abastecer a las más variadas empresas y comercios del interior de país, contamos en nuestra cartera de clientes con las más importantes empresas de Rosario y el Gran Rosario.</p>
+                        <p>
+                            Al contar con reparto propio, podemos despachar a micro y transpotes a todo el país.</p>
+                        <p>
+                            Consultar segun la ubicación, el día de envío.</p>
+                        <p>
+                            En zonas diferentes a Rosario y el Gran Rosario, consultar el costo del envío.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/contacto.html" role="button"  class="btn btn-primary">Solicitar presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="font-small">
+            <div class="container text-center text-md-left h-100">
+                <div class="row h-100">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-center text-md-left">© 2021 Copyright
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-face btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/" target="_blank">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-insta btn-sm rgba-white-slight mx-1" href="https://www.instagram.com/?hl=es" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://wa.me/5493416664432" target="_blank">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>

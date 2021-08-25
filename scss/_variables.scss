@@ -1,0 +1,41 @@
+$orange: #eb6e07;
+$blue: #1d293e;
+$blue-light:#3A6EA5;
+$grey:#C0C0C0;
+$grey-light:#EBEBEB;
+$black: #000;
+$white: #fff;
+
+$texto-claro: $white;
+$texto-oscuro: $black;
+$texto-primario: $orange;
+$fondo-oscuro:$blue;
+$fondo-transparente:#1d293eb0;
+$fondo-claro: $grey-light;
+$titulo-claro: $white;
+$titulo-oscuro: $black;
+
+$none:#00000000;
+
+$redes: (
+    facebook: #3b5998,
+    instagram: #d6249f,
+    whatsapp: #4dc247,
+    linkedin: #517fa4
+);
+
+$fuente-titulo:'Poppins', sans-serif;
+$fuente-parrafos:'Open Sans', sans-serif; 
+
+
+$trabajos: (
+    offset:'offset',
+    digital:'digital',
+    diseno:'diseño',
+    laser:'laser',
+    postprensa:'laminadora',
+    logistica:'envio'
+);
+
+
+$modo-oscuro: true;

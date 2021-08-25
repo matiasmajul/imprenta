@@ -1,0 +1,84 @@
+
+/*--------------------------------------------- MEDIA TABLET -------------------------------------------------*/
+
+@media (min-width: 500px){
+    @include generarColumnas('md');
+
+    main{
+        @if $modo-oscuro == true {
+            background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-medi.jpg?dl=0");
+        } @else if $modo-oscuro == false {
+            background-image: url("https://dl.dropboxusercontent.com/s/o6czev9pleauymo/cielo-med.jpg?dl=0");   
+        }
+  }
+
+  .carousel-item h5{
+      color:$grey-light;
+      
+  }
+
+  .carousel-caption{
+      background-color: $fondo-transparente;
+      border-radius: 10px;
+      
+  }
+
+  th,td {
+    font-size: 1rem;
+}
+.accordion{
+    max-width: 550px;
+    margin: 0 auto;
+}
+  .productos{
+      width: 60vw;
+  }
+}
+
+
+/*--------------------------------------------- MEDIA PC -------------------------------------------------*/
+@media (min-width: 1024px) {
+    @include generarColumnas('lg');
+
+  main{
+      @if $modo-oscuro == true {
+        background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
+    } @else if $modo-oscuro == false {
+        background-image: url("https://dl.dropboxusercontent.com/s/fybdaouomc5e4rm/cielo-gra.jpg?dl=0");   
+    }
+      background-size: 100vw 100vh;
+  }
+
+  th,td {
+    font-size: 1rem;
+}
+  .container__frecuentes{
+     height: 100%; 
+     min-height: 80vh;
+  }
+
+  .nav-link:hover{
+      border-bottom: 1px solid #b15205;
+  }
+  .productos{
+      width: 50vw;
+  }
+  .promos__titulo
+  {
+      margin-top: 5rem;
+  }
+  .accordion{
+      width: 40%;
+  }
+
+  .container__imagen img{
+      width:500px ;
+      height: 300px;
+  }
+
+  .form{
+      width: 50vw;
+  }
+
+}
+

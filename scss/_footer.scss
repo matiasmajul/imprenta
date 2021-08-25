@@ -1,0 +1,15 @@
+
+footer{
+    background-color: $fondo-oscuro;
+    color:$texto-primario;    
+    height: 80px;
+    .row{
+        @include centrarContenido( center,center);
+        height: 100%;
+        .btn-floating{
+            color: $texto-primario; 
+        }
+        
+        
+    }
+}

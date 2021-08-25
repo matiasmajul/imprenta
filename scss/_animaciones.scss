@@ -1,0 +1,105 @@
+/*--------------------------------------------- AVIONES DE PAPEL -------------------------------------------------*/
+
+
+.avion {
+    background-image: url(/imagen/avion-de-papel.svg);
+    background-size: 100% 100%;
+    width: 44px;
+    height: 60px;
+    animation-name: fly;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+  
+  }
+  .avion--one {
+    animation-duration: 30s;
+    animation-delay: 0s;		
+  }
+  
+  .avion--two {
+    animation-duration: 25s;
+    animation-delay: 15s;
+  }
+    
+  
+  .container__avion {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    will-change: transform;
+    animation-name: fly-right;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .container__avion--one {
+    animation-duration: 30s;
+    animation-delay: 0;
+  }
+  
+  .container__avion--two {
+    animation-duration: 25s;
+    anImation-delay: 15s;
+  }
+    
+    
+  /*--------------------------------------------- ANIMACIONES  -------------------------------------------------*/
+      
+  @keyframes fly {
+    0%{ transform: rotateZ(15deg);}
+    25%{transform: rotateZ(35deg); }
+    50%{transform: rotateZ(85deg); }
+    75%{transform: rotateZ(55deg); }
+    85%{transform: rotateZ(35deg); }
+    100%{ transform: rotateZ(35deg); }
+  }
+  
+  @keyframes fly-right {
+    0% { transform: translateY(-10vh) scale(0.3) translateX(-12vw);    }
+    10% {  transform: translateY(-30vh) translateX(10vw) scale(0.4);}
+    20% {transform: translateY(-40vh) translateX(30vw) scale(0.5);}    
+    30% {transform: translateY(-40vh) translateX(50vw) scale(0.5);}    
+    40% {transform: translateY(-30vh) translateX(70vw) scale(0.5);}    
+    50% {transform: translateY(-20vh) translateX(90vw) scale(0.5);}    
+    60% {transform: translateY(-10vh) translateX(105vw) scale(0.4);}
+    61% {transform: translateY(-10vh) translateX(105vw) scale(0);}    
+    100% { transform: translateY(-10vh) translateX(110vw) scale(0);}  
+  }
+  
+  
+  @keyframes title-one {
+    10%{   color: $titulo-claro; }
+    40%{   color: $titulo-claro;}
+    50%{   color: $none;}
+    }
+  
+  @keyframes title-two {
+    50%{   color: $none; }
+    60%{   color: $titulo-claro; }
+    90%{   color: $titulo-claro;}
+    100%{  color: $none;}
+  }
+  
+  @keyframes subtitle {
+    0%{    color: $none;  }
+    100%{  color: $titulo-claro; }
+  }
+  
+
+  @keyframes title-one-oscuro {
+    10%{   color: $titulo-oscuro; }
+    40%{   color: $titulo-oscuro;}
+    50%{   color: $none;}
+    }
+  
+  @keyframes title-two-oscuro {
+    50%{   color: $none; }
+    60%{   color: $titulo-oscuro; }
+    90%{   color: $titulo-oscuro;}
+    100%{  color: $none;}
+  }
+  
+  @keyframes subtitle-oscuro {
+    0%{    color: $none;  }
+    100%{  color: $titulo-oscuro; }
+  }

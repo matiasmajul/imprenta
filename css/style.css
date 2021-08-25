@@ -1,0 +1,432 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+/* Generar Columnas */
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+.bi-facebook:hover {
+  color: #3b5998; }
+
+.bi-instagram:hover {
+  color: #d6249f; }
+
+.bi-whatsapp:hover {
+  color: #4dc247; }
+
+.bi-linkedin:hover {
+  color: #517fa4; }
+
+.trabajo__offset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/offset.jpg); }
+
+.trabajo__digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/digital.jpg); }
+
+.trabajo__diseno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/diseño.jpg); }
+
+.trabajo__laser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/laser.jpg); }
+
+.trabajo__postprensa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/laminadora.jpg); }
+
+.trabajo__logistica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagen/trabajos/envio.jpg); }
+
+.navbar {
+  background-color: #1d293e;
+  text-align: center; }
+  .navbar .navbar-brand {
+    width: 50px; }
+    .navbar .navbar-brand img {
+      width: 100%;
+      filter: drop-shadow(0 0 5px #000); }
+    .navbar .navbar-brand img:hover {
+      transform: scale(1.1, 1.1); }
+  .navbar .navbar-toggler i, .navbar .navbar-toggler {
+    color: #eb6e07;
+    border-color: #eb6e07; }
+  .navbar .nav-link {
+    color: #eb6e07 !important;
+    filter: drop-shadow(0 0 2px #000); }
+
+main {
+  width: 100%;
+  color: #fff;
+  background-image: url("https://dl.dropboxusercontent.com/s/ddfyoxz1au3dax7/cielo-atard-peq.jpg?dl=0");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; }
+
+/*----------------------------INDEX-------------------------------*/
+.intro {
+  width: 100%;
+  height: 100vh; }
+  .intro__titulo {
+    width: 100vw;
+    color: #fff;
+    position: relative; }
+    .intro__titulo .titulo__uno {
+      position: absolute;
+      width: 100%;
+      animation: title-one 10s linear 0s infinite;
+      color: #00000000; }
+    .intro__titulo .titulo__dos {
+      position: absolute;
+      width: 100%;
+      animation: title-two 10s linear 0s infinite;
+      color: #00000000; }
+    .intro__titulo .titulo__subtitulo {
+      font-size: 1.5rem;
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      animation: subtitle 1s linear 0s 1; }
+  .intro__logo {
+    z-index: 2; }
+    .intro__logo img {
+      transition: transform 1s; }
+    .intro__logo img:hover {
+      transform: rotate(15deg); }
+  .intro__boton {
+    position: absolute;
+    bottom: 10px; }
+
+.trabajo {
+  background-color: #EBEBEB;
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0 4rem 0;
+  padding: 0; }
+  .trabajo div {
+    position: relative;
+    background-color: #1d293e;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 50vh;
+    color: #fff; }
+  .trabajo div:hover {
+    background-blend-mode: normal; }
+  .trabajo button {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    transition: none;
+    filter: drop-shadow(0 0 5px #000); }
+    .trabajo button:hover {
+      color: #fff;
+      border: 1px solid #fff; }
+
+/*----------------------------PRODUCTOS-------------------------------*/
+.productos {
+  width: 100%;
+  height: 70vh;
+  padding: 0; }
+  .productos .carousel-item img {
+    object-fit: cover; }
+
+th, td {
+  font-size: .5rem; }
+
+/*----------------------------NOSOTROS-------------------------------*/
+.featurette {
+  margin: 2rem;
+  color: #fff;
+  background-color: #1d293e;
+  letter-spacing: .1rem; }
+  .featurette__image {
+    width: 400px;
+    height: 400px; }
+    .featurette__image img {
+      width: 100%;
+      height: 100%; }
+
+/*----------------------------FRECUENTES-------------------------------*/
+.accordion {
+  width: 100%; }
+
+/*----------------------------CONTACTO-------------------------------*/
+.form {
+  background-color: #1d293eb0; }
+
+footer {
+  background-color: #1d293e;
+  color: #eb6e07;
+  height: 80px; }
+  footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    footer .row .btn-floating {
+      color: #eb6e07; }
+
+/*--------------------------------------------- MEDIA TABLET -------------------------------------------------*/
+@media (min-width: 500px) {
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; }
+  main {
+    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-medi.jpg?dl=0"); }
+  .carousel-item h5 {
+    color: #EBEBEB; }
+  .carousel-caption {
+    background-color: #1d293eb0;
+    border-radius: 10px; }
+  th, td {
+    font-size: 1rem; }
+  .accordion {
+    max-width: 550px;
+    margin: 0 auto; }
+  .productos {
+    width: 60vw; } }
+
+/*--------------------------------------------- MEDIA PC -------------------------------------------------*/
+@media (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; }
+  main {
+    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
+    background-size: 100vw 100vh; }
+  th, td {
+    font-size: 1rem; }
+  .container__frecuentes {
+    height: 100%;
+    min-height: 80vh; }
+  .nav-link:hover {
+    border-bottom: 1px solid #b15205; }
+  .productos {
+    width: 50vw; }
+  .promos__titulo {
+    margin-top: 5rem; }
+  .accordion {
+    width: 40%; }
+  .container__imagen img {
+    width: 500px;
+    height: 300px; }
+  .form {
+    width: 50vw; } }
+
+/*--------------------------------------------- AVIONES DE PAPEL -------------------------------------------------*/
+.avion {
+  background-image: url(/imagen/avion-de-papel.svg);
+  background-size: 100% 100%;
+  width: 44px;
+  height: 60px;
+  animation-name: fly;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  overflow-x: hidden; }
+
+.avion--one {
+  animation-duration: 30s;
+  animation-delay: 0s; }
+
+.avion--two {
+  animation-duration: 25s;
+  animation-delay: 15s; }
+
+.container__avion {
+  position: absolute;
+  top: 100%;
+  left: -10%;
+  will-change: transform;
+  animation-name: fly-right;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.container__avion--one {
+  animation-duration: 30s;
+  animation-delay: 0; }
+
+.container__avion--two {
+  animation-duration: 25s;
+  anImation-delay: 15s; }
+
+/*--------------------------------------------- ANIMACIONES  -------------------------------------------------*/
+@keyframes fly {
+  0% {
+    transform: rotateZ(15deg); }
+  25% {
+    transform: rotateZ(35deg); }
+  50% {
+    transform: rotateZ(85deg); }
+  75% {
+    transform: rotateZ(55deg); }
+  85% {
+    transform: rotateZ(35deg); }
+  100% {
+    transform: rotateZ(35deg); } }
+
+@keyframes fly-right {
+  0% {
+    transform: translateY(-10vh) scale(0.3) translateX(-12vw); }
+  10% {
+    transform: translateY(-30vh) translateX(10vw) scale(0.4); }
+  20% {
+    transform: translateY(-40vh) translateX(30vw) scale(0.5); }
+  30% {
+    transform: translateY(-40vh) translateX(50vw) scale(0.5); }
+  40% {
+    transform: translateY(-30vh) translateX(70vw) scale(0.5); }
+  50% {
+    transform: translateY(-20vh) translateX(90vw) scale(0.5); }
+  60% {
+    transform: translateY(-10vh) translateX(105vw) scale(0.4); }
+  61% {
+    transform: translateY(-10vh) translateX(105vw) scale(0); }
+  100% {
+    transform: translateY(-10vh) translateX(110vw) scale(0); } }
+
+@keyframes title-one {
+  10% {
+    color: #fff; }
+  40% {
+    color: #fff; }
+  50% {
+    color: #00000000; } }
+
+@keyframes title-two {
+  50% {
+    color: #00000000; }
+  60% {
+    color: #fff; }
+  90% {
+    color: #fff; }
+  100% {
+    color: #00000000; } }
+
+@keyframes subtitle {
+  0% {
+    color: #00000000; }
+  100% {
+    color: #fff; } }
+
+@keyframes title-one-oscuro {
+  10% {
+    color: #000; }
+  40% {
+    color: #000; }
+  50% {
+    color: #00000000; } }
+
+@keyframes title-two-oscuro {
+  50% {
+    color: #00000000; }
+  60% {
+    color: #000; }
+  90% {
+    color: #000; }
+  100% {
+    color: #00000000; } }
+
+@keyframes subtitle-oscuro {
+  0% {
+    color: #00000000; }
+  100% {
+    color: #000; } }
