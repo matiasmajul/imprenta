@@ -196,5 +196,17 @@ background-color: $fondo-transparente;
 
 
 
+    /*---------------------------- 404 -------------------------------*/
 
-
+.notfound{
+    height: 100vh;
+    color: $texto-primario;
+    h1{
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
+    a:hover{
+        color:$texto-primario;
+    }
+    
+}

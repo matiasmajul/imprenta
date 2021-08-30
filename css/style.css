@@ -249,6 +249,16 @@ main {
     background-color: #1d293e;
     color: #eb6e07; }
 
+/*---------------------------- 404 -------------------------------*/
+.notfound {
+  height: 100vh;
+  color: #eb6e07; }
+  .notfound h1 {
+    font-size: 5rem;
+    padding-top: 2rem; }
+  .notfound a:hover {
+    color: #eb6e07; }
+
 footer {
   background-color: #1d293e;
   color: #eb6e07;
