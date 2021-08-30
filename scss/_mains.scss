@@ -24,7 +24,7 @@ main{
         color: $titulo-oscuro; 
     }
     position: relative;
-        .titulo__uno{
+        .titulo--uno{
         position: absolute;
         width: 100%;
         @if $modo-oscuro == true {
@@ -34,7 +34,7 @@ main{
         }
         color:$none;
         }
-        .titulo__dos{
+        .titulo--dos{
         position: absolute;
         width: 100%;
         @if $modo-oscuro == true {
@@ -72,12 +72,12 @@ main{
     }
 }
 
-.trabajo{
-background-color: $grey-light;
-height: 100%;
-width: 100%;
-margin: 1rem 0 4rem 0;
-padding: 0;
+.trabajos{
+    background-color: $grey-light;
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0 4rem 0;
+    padding: 0;
 
     div{
     position: relative;
@@ -103,31 +103,72 @@ padding: 0;
             }
         }
 }
+.modal-content{
+    background-color: $fondo-claro;
+    color:$texto-oscuro;
+}
+
+.modal-footer a{
+    background-color: $fondo-oscuro;
+    border: none;
+    box-shadow: 0 0 1px $fondo-oscuro;
+}
+
+.modal-footer a:hover{
+    background-color: $fondo-oscuro;
+    color:$texto-primario;
+
+}
 /*----------------------------PRODUCTOS-------------------------------*/
 
 .productos{
-width: 100%;
-height: 70vh;
-padding: 0;
-    .carousel-item img{
-    object-fit: cover;
-    }
+    width: 100%;
+    height: 100%;
+    padding: 0;
+        .carousel-item img{
+        object-fit: cover;
+        }
 }
 
-th,td {
-    font-size: .5rem;
+.promos{
+    max-width: 100vw;
+    margin: 0 auto !important;
+    th,td {
+        font-size: 0.8rem;
+    }
+    ol, ul{
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+    }
+
 }
+
 
     /*----------------------------NOSOTROS-------------------------------*/
+
+.nosotros{
+    padding: 0;
+}
 .featurette{
-    margin: 2rem;
+    margin: .5rem 0;
+    padding: .2rem;
     color:$texto-claro; 
     background-color: $fondo-oscuro;
     letter-spacing: .1rem;
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .6rem;
+        font-weight: 200;
+    }
     &__image{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
             img{
+            object-fit: cover;
             width: 100%;
             height: 100%;
             }
@@ -142,7 +183,18 @@ width: 100%;
     /*----------------------------CONTACTO-------------------------------*/
 .form{
 background-color: $fondo-transparente;
-}
+    .btn{
+        background-color: $fondo-oscuro;
+        border: none;
+        color:$texto-claro;
+        }     
+     .btn:hover{
+        background-color: $fondo-oscuro;
+        color:$texto-primario;  
+        }
+    }
+
+
 
 
 

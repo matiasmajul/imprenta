@@ -59,37 +59,37 @@ p {
 .bi-linkedin:hover {
   color: #517fa4; }
 
-.trabajo__offset {
+.trabajo--offset {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imagen/trabajos/offset.jpg); }
 
-.trabajo__digital {
+.trabajo--digital {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imagen/trabajos/digital.jpg); }
 
-.trabajo__diseno {
+.trabajo--diseno {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imagen/trabajos/diseño.jpg); }
 
-.trabajo__laser {
+.trabajo--laser {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imagen/trabajos/laser.jpg); }
 
-.trabajo__postprensa {
+.trabajo--postprensa {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imagen/trabajos/laminadora.jpg); }
 
-.trabajo__logistica {
+.trabajo--logistica {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,12 +128,12 @@ main {
     width: 100vw;
     color: #fff;
     position: relative; }
-    .intro__titulo .titulo__uno {
+    .intro__titulo .titulo--uno {
       position: absolute;
       width: 100%;
       animation: title-one 10s linear 0s infinite;
       color: #00000000; }
-    .intro__titulo .titulo__dos {
+    .intro__titulo .titulo--dos {
       position: absolute;
       width: 100%;
       animation: title-two 10s linear 0s infinite;
@@ -154,52 +154,83 @@ main {
     position: absolute;
     bottom: 10px; }
 
-.trabajo {
+.trabajos {
   background-color: #EBEBEB;
   height: 100%;
   width: 100%;
   margin: 1rem 0 4rem 0;
   padding: 0; }
-  .trabajo div {
+  .trabajos div {
     position: relative;
     background-color: #1d293e;
     background-size: cover;
     background-blend-mode: soft-light;
     height: 50vh;
     color: #fff; }
-  .trabajo div:hover {
+  .trabajos div:hover {
     background-blend-mode: normal; }
-  .trabajo button {
+  .trabajos button {
     color: #fff;
     text-align: center;
     font-size: 2.5rem;
     transition: none;
     filter: drop-shadow(0 0 5px #000); }
-    .trabajo button:hover {
+    .trabajos button:hover {
       color: #fff;
       border: 1px solid #fff; }
+
+.modal-content {
+  background-color: #EBEBEB;
+  color: #000; }
+
+.modal-footer a {
+  background-color: #1d293e;
+  border: none;
+  box-shadow: 0 0 1px #1d293e; }
+
+.modal-footer a:hover {
+  background-color: #1d293e;
+  color: #eb6e07; }
 
 /*----------------------------PRODUCTOS-------------------------------*/
 .productos {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   padding: 0; }
   .productos .carousel-item img {
     object-fit: cover; }
 
-th, td {
-  font-size: .5rem; }
+.promos {
+  max-width: 100vw;
+  margin: 0 auto !important; }
+  .promos th, .promos td {
+    font-size: 0.8rem; }
+  .promos ol, .promos ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0; }
 
 /*----------------------------NOSOTROS-------------------------------*/
+.nosotros {
+  padding: 0; }
+
 .featurette {
-  margin: 2rem;
+  margin: .5rem 0;
+  padding: .2rem;
   color: #fff;
   background-color: #1d293e;
   letter-spacing: .1rem; }
+  .featurette h2 {
+    font-size: 1rem; }
+  .featurette p {
+    font-size: .6rem;
+    font-weight: 200; }
   .featurette__image {
-    width: 400px;
-    height: 400px; }
+    width: 300px;
+    height: 300px; }
     .featurette__image img {
+      object-fit: cover;
       width: 100%;
       height: 100%; }
 
@@ -210,6 +241,13 @@ th, td {
 /*----------------------------CONTACTO-------------------------------*/
 .form {
   background-color: #1d293eb0; }
+  .form .btn {
+    background-color: #1d293e;
+    border: none;
+    color: #fff; }
+  .form .btn:hover {
+    background-color: #1d293e;
+    color: #eb6e07; }
 
 footer {
   background-color: #1d293e;
@@ -222,95 +260,6 @@ footer {
     height: 100%; }
     footer .row .btn-floating {
       color: #eb6e07; }
-
-/*--------------------------------------------- MEDIA TABLET -------------------------------------------------*/
-@media (min-width: 500px) {
-  .col-md-1 {
-    width: 8.33333%; }
-  .col-md-2 {
-    width: 16.66667%; }
-  .col-md-3 {
-    width: 25%; }
-  .col-md-4 {
-    width: 33.33333%; }
-  .col-md-5 {
-    width: 41.66667%; }
-  .col-md-6 {
-    width: 50%; }
-  .col-md-7 {
-    width: 58.33333%; }
-  .col-md-8 {
-    width: 66.66667%; }
-  .col-md-9 {
-    width: 75%; }
-  .col-md-10 {
-    width: 83.33333%; }
-  .col-md-11 {
-    width: 91.66667%; }
-  .col-md-12 {
-    width: 100%; }
-  main {
-    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-medi.jpg?dl=0"); }
-  .carousel-item h5 {
-    color: #EBEBEB; }
-  .carousel-caption {
-    background-color: #1d293eb0;
-    border-radius: 10px; }
-  th, td {
-    font-size: 1rem; }
-  .accordion {
-    max-width: 550px;
-    margin: 0 auto; }
-  .productos {
-    width: 60vw; } }
-
-/*--------------------------------------------- MEDIA PC -------------------------------------------------*/
-@media (min-width: 1024px) {
-  .col-lg-1 {
-    width: 8.33333%; }
-  .col-lg-2 {
-    width: 16.66667%; }
-  .col-lg-3 {
-    width: 25%; }
-  .col-lg-4 {
-    width: 33.33333%; }
-  .col-lg-5 {
-    width: 41.66667%; }
-  .col-lg-6 {
-    width: 50%; }
-  .col-lg-7 {
-    width: 58.33333%; }
-  .col-lg-8 {
-    width: 66.66667%; }
-  .col-lg-9 {
-    width: 75%; }
-  .col-lg-10 {
-    width: 83.33333%; }
-  .col-lg-11 {
-    width: 91.66667%; }
-  .col-lg-12 {
-    width: 100%; }
-  main {
-    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
-    background-size: 100vw 100vh; }
-  th, td {
-    font-size: 1rem; }
-  .container__frecuentes {
-    height: 100%;
-    min-height: 80vh; }
-  .nav-link:hover {
-    border-bottom: 1px solid #b15205; }
-  .productos {
-    width: 50vw; }
-  .promos__titulo {
-    margin-top: 5rem; }
-  .accordion {
-    width: 40%; }
-  .container__imagen img {
-    width: 500px;
-    height: 300px; }
-  .form {
-    width: 50vw; } }
 
 /*--------------------------------------------- AVIONES DE PAPEL -------------------------------------------------*/
 .avion {
@@ -430,3 +379,114 @@ footer {
     color: #00000000; }
   100% {
     color: #000; } }
+
+/*--------------------------------------------- MEDIA TABLET -------------------------------------------------*/
+@media (min-width: 500px) {
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; }
+  main {
+    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-medi.jpg?dl=0"); }
+  .carousel-item h2 {
+    color: #EBEBEB; }
+  .carousel-caption {
+    background-color: #1d293eb0;
+    border-radius: 10px; }
+  .promos {
+    max-width: 80vw; }
+    .promos th, .promos td {
+      font-size: 1.1rem; }
+  .accordion {
+    max-width: 550px;
+    margin: 0 auto; }
+  .productos {
+    width: 60vw; }
+  .featurette {
+    margin: 1rem;
+    padding: .2rem; }
+    .featurette h2 {
+      font-size: 1.1rem; }
+    .featurette p {
+      font-size: 1rem;
+      font-weight: 200; }
+    .featurette__image {
+      width: 400px;
+      height: 400px; } }
+
+/*--------------------------------------------- MEDIA PC -------------------------------------------------*/
+@media (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; }
+  main {
+    background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
+    background-size: 100vw 100vh; }
+  .promos {
+    max-width: 60vw; }
+    .promos th, .promos td {
+      font-size: 1.2rem; }
+  .container__frecuentes {
+    height: 100%;
+    min-height: 80vh; }
+  .nav-link:hover {
+    border-bottom: 1px solid #b15205; }
+  .productos {
+    width: 50vw; }
+  .promos__titulo {
+    margin-top: 1rem; }
+  .accordion {
+    width: 40%; }
+  .container__imagen img {
+    width: 500px;
+    height: 300px; }
+  .form {
+    width: 50vw; }
+  .featurette {
+    margin: 2rem;
+    padding: .2rem; }
+    .featurette h2 {
+      font-size: 1.5rem; }
+    .featurette p {
+      font-weight: 500; } }

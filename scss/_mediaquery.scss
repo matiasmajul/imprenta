@@ -12,7 +12,7 @@
         }
   }
 
-  .carousel-item h5{
+  .carousel-item h2{
       color:$grey-light;
       
   }
@@ -22,10 +22,14 @@
       border-radius: 10px;
       
   }
+  .promos{
+    max-width: 80vw;
+    th,td {
+        font-size: 1.1rem;
+    }
 
-  th,td {
-    font-size: 1rem;
-}
+  }
+
 .accordion{
     max-width: 550px;
     margin: 0 auto;
@@ -33,6 +37,23 @@
   .productos{
       width: 60vw;
   }
+
+  .featurette{
+    margin: 1rem;
+    padding: .2rem;
+
+    h2{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    &__image{
+        width: 400px;
+        height: 400px;
+    }
+}
 }
 
 
@@ -48,10 +69,13 @@
     }
       background-size: 100vw 100vh;
   }
-
-  th,td {
-    font-size: 1rem;
+  .promos{
+    max-width: 60vw;
+      th,td {
+    font-size: 1.2rem;
 }
+  }
+
   .container__frecuentes{
      height: 100%; 
      min-height: 80vh;
@@ -65,7 +89,7 @@
   }
   .promos__titulo
   {
-      margin-top: 5rem;
+      margin-top: 1rem;
   }
   .accordion{
       width: 40%;
@@ -80,5 +104,17 @@
       width: 50vw;
   }
 
+  .featurette{
+
+    margin: 2rem;
+    padding: .2rem;
+
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-weight: 500;
+    }
+  }
 }
 

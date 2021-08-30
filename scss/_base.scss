@@ -49,7 +49,7 @@ p{
 
 @each $clave, $valor in $trabajos {
         
-    .trabajo__#{$clave}{ 
+    .trabajo--#{$clave}{ 
         @include centrarContenido( center,center);
         background-image: url(../imagen/trabajos/#{$valor}.jpg);
         }
