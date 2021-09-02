@@ -86,10 +86,16 @@ main{
     background-blend-mode:soft-light;
     height: 50vh;
     color:$titulo-claro;
+    @include centrarContenido( center,center);
     }
 
     div:hover{
     background-blend-mode:normal;
+    }
+    @each $clave, $valor in $trabajos { 
+        &--#{$clave}{ 
+            background-image: url('../imagen/trabajos/#{$valor}.jpg');
+            }
     }
     button{
         color: $texto-claro;

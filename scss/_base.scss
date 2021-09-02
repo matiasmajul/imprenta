@@ -47,13 +47,7 @@ p{
 }
 
 
-@each $clave, $valor in $trabajos {
-        
-    .trabajo--#{$clave}{ 
-        @include centrarContenido( center,center);
-        background-image: url('../imagen/trabajos/#{$valor}.jpg');
-        }
-}
+
 
 
 
