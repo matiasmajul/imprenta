@@ -1,29 +1,5 @@
 /*--------------------------------------------- AVIONES DE PAPEL -------------------------------------------------*/
-
-
-.avion {
-    background-image: url(/imagen/avion-de-papel.svg);
-    background-size: 100% 100%;
-    width: 44px;
-    height: 60px;
-    animation-name: fly;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    overflow-x: hidden;
-  
-  }
-  .avion--one {
-    animation-duration: 30s;
-    animation-delay: 0s;		
-  }
-  
-  .avion--two {
-    animation-duration: 25s;
-    animation-delay: 15s;
-  }
-    
-  
-  .container__avion {
+.container__avion {
     position: absolute;
     top: 100%;
     left: -10%;
@@ -31,7 +7,28 @@
     animation-name: fly-right;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }
+        
+    .avion {
+      background-image: url(/imagen/avion-de-papel.svg);
+      background-size: 100% 100%;
+      width: 44px;
+      height: 60px;
+      animation-name: fly;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      overflow-x: hidden;
+
+    }
+    .avion--one {
+      animation-duration: 30s;
+      animation-delay: 0s;		
+    }
+
+    .avion--two {
+      animation-duration: 25s;
+      animation-delay: 15s;
+    }
+}
   .container__avion--one {
     animation-duration: 30s;
     animation-delay: 0;

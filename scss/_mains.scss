@@ -83,7 +83,7 @@ main{
     position: relative;
     background-color: $fondo-oscuro;
     background-size: cover;
-    background-blend-mode:soft-light;
+    background-blend-mode:color;
     height: 50vh;
     color:$titulo-claro;
     }
@@ -161,7 +161,7 @@ main{
         font-size: 1rem;
     }
     p{
-        font-size: .6rem;
+        font-size: .8rem;
         font-weight: 200;
     }
     &__image{

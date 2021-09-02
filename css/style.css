@@ -164,7 +164,7 @@ main {
     position: relative;
     background-color: #1d293e;
     background-size: cover;
-    background-blend-mode: soft-light;
+    background-blend-mode: color;
     height: 50vh;
     color: #fff; }
   .trabajos div:hover {
@@ -224,7 +224,7 @@ main {
   .featurette h2 {
     font-size: 1rem; }
   .featurette p {
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: 200; }
   .featurette__image {
     width: 300px;
@@ -272,24 +272,6 @@ footer {
       color: #eb6e07; }
 
 /*--------------------------------------------- AVIONES DE PAPEL -------------------------------------------------*/
-.avion {
-  background-image: url(/imagen/avion-de-papel.svg);
-  background-size: 100% 100%;
-  width: 44px;
-  height: 60px;
-  animation-name: fly;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  overflow-x: hidden; }
-
-.avion--one {
-  animation-duration: 30s;
-  animation-delay: 0s; }
-
-.avion--two {
-  animation-duration: 25s;
-  animation-delay: 15s; }
-
 .container__avion {
   position: absolute;
   top: 100%;
@@ -298,6 +280,21 @@ footer {
   animation-name: fly-right;
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
+  .container__avion .avion {
+    background-image: url(/imagen/avion-de-papel.svg);
+    background-size: 100% 100%;
+    width: 44px;
+    height: 60px;
+    animation-name: fly;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow-x: hidden; }
+  .container__avion .avion--one {
+    animation-duration: 30s;
+    animation-delay: 0s; }
+  .container__avion .avion--two {
+    animation-duration: 25s;
+    animation-delay: 15s; }
 
 .container__avion--one {
   animation-duration: 30s;
