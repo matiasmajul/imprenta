@@ -51,7 +51,7 @@ p{
         
     .trabajo--#{$clave}{ 
         @include centrarContenido( center,center);
-        background-image: url(../imagen/trabajos/#{$valor}.jpg);
+        background-image: url('../imagen/trabajos/#{$valor}.jpg');
         }
 }
 
