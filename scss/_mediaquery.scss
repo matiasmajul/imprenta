@@ -10,50 +10,42 @@
         } @else if $modo-oscuro == false {
             background-image: url("https://dl.dropboxusercontent.com/s/o6czev9pleauymo/cielo-med.jpg?dl=0");   
         }
-  }
-
-  .carousel-item h2{
-      color:$grey-light;
-      
-  }
-
-  .carousel-caption{
-      background-color: $fondo-transparente;
-      border-radius: 10px;
-      
-  }
-  .promos{
-    max-width: 80vw;
-    th,td {
-        font-size: 1.1rem;
     }
 
-  }
-
-.accordion{
-    max-width: 550px;
-    margin: 0 auto;
-}
-  .productos{
-      width: 60vw;
-  }
-
-  .featurette{
-    margin: 1rem;
-    padding: .2rem;
-
-    h2{
-        font-size: 1.1rem;
+    .carousel-item h2{
+        color:$grey-light;
     }
-    p{
-        font-size: 1.1rem;
-        font-weight: 200;
+
+    .carousel-caption{
+        background-color: $fondo-transparente;
+        border-radius: 10px;
+        
     }
-    &__image{
-        width: 400px;
-        height: 400px;
+
+    .accordion{
+        max-width: 550px;
+        margin: 0 auto;
     }
-}
+    .productos{
+        width: 60vw;
+    }
+
+    .featurette{
+        margin: 1rem;
+        padding: .2rem;
+
+        h2{
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 200;
+        }
+        &__image{
+            width: 400px;
+            height: 400px;
+        }
+    }
 }
 
 
@@ -61,60 +53,53 @@
 @media (min-width: 1024px) {
     @include generarColumnas('lg');
 
-  main{
-      @if $modo-oscuro == true {
-        background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
-    } @else if $modo-oscuro == false {
-        background-image: url("https://dl.dropboxusercontent.com/s/fybdaouomc5e4rm/cielo-gra.jpg?dl=0");   
+    main{
+        background-size: 100vw 100vh;
+        @if $modo-oscuro == true {
+            background-image: url("https://dl.dropboxusercontent.com/s/98tr5llgdtirn8m/cielo-atard-gra.jpg?dl=0");
+        } @else if $modo-oscuro == false {
+            background-image: url("https://dl.dropboxusercontent.com/s/fybdaouomc5e4rm/cielo-gra.jpg?dl=0");   
+        }
     }
-      background-size: 100vw 100vh;
-  }
-  .promos{
-    max-width: 60vw;
-      th,td {
-    font-size: 1.2rem;
-}
-  }
 
-  .container__frecuentes{
-     height: 100%; 
-     min-height: 80vh;
-  }
+  
 
-  .nav-link:hover{
-      border-bottom: 1px solid #b15205;
-  }
-  .productos{
-      width: 50vw;
-  }
-  .promos__titulo
-  {
-      margin-top: 1rem;
-  }
-  .accordion{
-      width: 40%;
-  }
-
-  .container__imagen img{
-      width:500px ;
-      height: 300px;
-  }
-
-  .form{
-      width: 50vw;
-  }
-
-  .featurette{
-
-    margin: 2rem;
-    padding: .2rem;
-
-    h2{
-        font-size: 1.5rem;
+    .container__frecuentes{
+        height: 100%; 
+        min-height: 80vh;
     }
-    p{
-        font-weight: 500;
+
+    .nav-link:hover{
+        border-bottom: 1px solid #b15205;
     }
+
+    .productos{
+        width: 50vw;
+    }
+
+    .accordion{
+        width: 40%;
+    }
+
+    .container__imagen img{
+        width:500px ;
+        height: 300px;
+    }
+
+    .form{
+        width: 50vw;
+    }
+
+    .featurette{
+        margin: 2rem;
+        padding: .2rem;
+
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-weight: 500;
+        }
   }
 }
 

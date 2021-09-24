@@ -5,20 +5,17 @@
     box-sizing: border-box;
 }
 
-
-
 body{
-      font-family: $fuente-titulo;
+    font-family: $fuente-titulo;
 }
 
 p{
     font-family: $fuente-parrafos;
-
 }
+
+
 /* Generar Columnas */
-
 @mixin generarColumnas($breakpoint) {
-
     @for $index from 1 through 12 {
         @if $breakpoint == 'mb' {
             .col-#{$index} {

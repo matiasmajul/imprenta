@@ -7,7 +7,16 @@
     animation-name: fly-right;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-        
+    &--one {
+      animation-duration: 30s;
+      animation-delay: 0;
+    }
+    
+    &--two {
+      animation-duration: 25s;
+      anImation-delay: 15s;
+    }  
+     
     .avion {
       background-image: url('../imagen/avion-de-papel.svg');
       background-size: 100% 100%;
@@ -17,27 +26,20 @@
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       overflow-x: hidden;
+      &--one {
+        animation-duration: 30s;
+        animation-delay: 0s;		
+      }
 
-    }
-    .avion--one {
-      animation-duration: 30s;
-      animation-delay: 0s;		
+      &--two {
+        animation-duration: 25s;
+        animation-delay: 15s;
+      }
     }
 
-    .avion--two {
-      animation-duration: 25s;
-      animation-delay: 15s;
-    }
+
 }
-  .container__avion--one {
-    animation-duration: 30s;
-    animation-delay: 0;
-  }
   
-  .container__avion--two {
-    animation-duration: 25s;
-    anImation-delay: 15s;
-  }
     
     
   /*--------------------------------------------- ANIMACIONES  -------------------------------------------------*/
